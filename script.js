@@ -19,3 +19,26 @@
 // When you're ready, click on the "Check your code" button to 
 // proceed to the next step and start the workshop.
 
+// Step 2
+// In the first part of the workshop, you will focus on building the 
+// functionality that generates a random choice for the computer.
+
+// Start by creating a variable called options and assign it an 
+// array with the following strings: "Rock", "Paper", and 
+// "Scissors".
+
+const options = ["Rock", "Paper", "Scissors"];
+
+// Step 3
+// The next step is to build out the functionality that will generate 
+// a random choice for the computer.
+
+// Create a function called getRandomComputerResult that returns a 
+// random choice from the options array.
+
+// Hint: Don't forget that in the earlier JavaScript fundamentals 
+// section, you learned about using Math.random() and Math.floor().
+
+function getRandomComputerResult() {
+  return Math.floor(Math.random() * (2 - 0 + 1) + 0);
+}
