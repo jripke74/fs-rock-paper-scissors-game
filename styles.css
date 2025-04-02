@@ -8,8 +8,8 @@
 
 :root {
   --very-dark-blue: #0a0a23;
-  --white: #fff;
-  --yellow: #f1be23;
+  --white: #ffffff;
+  --yellow: #f1be32;
   --golden-yellow: #feac32;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-  margin: 15px 0 20px;
+  margin: 33px 0 20px;
 }
 
 .btn {
