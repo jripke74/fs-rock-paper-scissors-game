@@ -153,20 +153,29 @@ const roundResultsMsg = document.querySelector("#results-msg");
 // will be used to determine the scores.
 
 function showResults(userOption) {
-  roundResultsMsg.textContent = getRoundResults(userOption);
-  playerScoreSpanElement.textContent = playerScore;
-  computerScoreSpanElement.textContent = computerScore;
+  roundResultsMsg.innerText = getRoundResults(userOption);
+  computerScoreSpanElement.innerText = computerScore;
+  playerScoreSpanElement.innerText = playerScore;
 
-  if (playerScore === 3) {
-    winnerMsgElement.textContent = "Player has won the game!";
+  if (playerScore === 3 || computerScore === 3) {
+    winnerMsgElement.innerText = `${
+      playerScore === 3 ? "Player" : "Computer"
+    } has won the game!`;
+
     resetGameBtn.style.display = "block";
-  } else if (computerScore === 3) {
-    winnerMsgElement.textContent = "Computer has won the game!";
-    resetGameBtn.style.display = "block";
-  } else {
     optionsContainer.style.display = "none";
   }
 }
+
+// Step 13
+// If the player or computer has won the game, there should be an
+// option to reset the game and play again.
+
+// Add an event listener to the resetGameBtn button. Your event
+// listener should take in a "click" event and a reference to the
+// resetGame function.
+
+resetGameBtn.addEventListener("click", resetGame);
 
 // Step 9
 // Now it is time to test out your showResults function.
