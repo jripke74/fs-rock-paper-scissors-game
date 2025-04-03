@@ -202,3 +202,18 @@ paperBtn.addEventListener("click", function () {
 scissorsBtn.addEventListener("click", function () {
   showResults("Scissors");
 });
+
+// Step 11
+// For the last portion of the workshop, you will focus on building
+// out the winner message and reset button functionality.
+
+// Start by creating a variable called winnerMsgElement that will 
+// store the element with the id of winner-msg.
+
+// Then, create a variable called optionsContainer that will store 
+// the element with the class of options-container.
+
+// Finally, create a variable called resetGameBtn that will store 
+// the element with the id of reset-game-btn.
+
+
