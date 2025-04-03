@@ -40,5 +40,32 @@ const options = ["Rock", "Paper", "Scissors"];
 // section, you learned about using Math.random() and Math.floor().
 
 function getRandomComputerResult() {
-  return Math.floor(Math.random() * (2 - 0 + 1) + 0);
+  const randomNumber = Math.floor(Math.random() * (2 - 0 + 1) + 0);
+  return options[randomNumber];
+}
+
+// Step 4
+// In this step, you will focus on determining if the player has 
+// won the round.
+
+// Create a hasPlayerWonTheRound function with two parameters called 
+// player and computer.
+
+// The function should return true if the player has won the round, 
+// and false if the player has lost or tied the round.
+
+// Here are the criteria for the player to win a round:
+
+// If the player chooses "Rock" and the computer chooses "Scissors"
+// If the player chooses "Scissors" and the computer chooses "Paper"
+// If the player chooses "Paper" and the computer chooses "Rock"
+
+function hasPlayerWonTheRound(player, computer) {
+  if (player === "Rock" && computer === "Scissors") {
+    return true;
+  } else if (player === "Scissors" && computer === "Paper") {
+    return true;
+  } else if (player === "Paper" && computer === "Rock") {
+    return true;
+  }
 }
