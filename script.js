@@ -167,6 +167,37 @@ function showResults(userOption) {
   }
 }
 
+// Step 14
+// For the final step of the workshop, you will need to build out
+// the reset game functionality.
+
+// Create a resetGame function that accomplishes the following:
+
+// Resets the player and computer scores to 0.
+// Updates the playerScoreSpanElement and computerScoreSpanElement
+// to display the new scores.
+// Hides the resetGameBtn button.
+// Shows the optionsContainer so the player can play again.
+// Clears the content for the winnerMsgElement and roundResultsMsg
+// elements.
+// Try testing out the game by playing a few rounds until one of the
+// players reaches 3 points. Then, click the "Play again?" button to
+// see if the game resets correctly.
+
+// And with this final step, you have completed the Rock, Paper,
+// Scissors game!
+
+function resetGame() {
+  playerScore = 0;
+  computerScore = 0;
+  playerScoreSpanElement.textContent = 0;
+  computerScoreSpanElement.textContent = 0;
+  resetGameBtn.style.display = "none";
+  optionsContainer.style.display = "block";
+  roundResultsMsg.innerText = "";
+  winnerMsgElement.innerText = "";
+}
+
 // Step 13
 // If the player or computer has won the game, there should be an
 // option to reset the game and play again.
