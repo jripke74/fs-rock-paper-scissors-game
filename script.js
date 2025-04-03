@@ -156,6 +156,16 @@ function showResults(userOption) {
   roundResultsMsg.textContent = getRoundResults(userOption);
   playerScoreSpanElement.textContent = playerScore;
   computerScoreSpanElement.textContent = computerScore;
+
+  if (playerScore === 3) {
+    winnerMsgElement.textContent = "Player has won the game!";
+    resetGameBtn.style.display = "block";
+  } else if (computerScore === 3) {
+    winnerMsgElement.textContent = "Computer has won the game!";
+    resetGameBtn.style.display = "block";
+  } else {
+    optionsContainer.style.display = "none";
+  }
 }
 
 // Step 9
@@ -207,13 +217,33 @@ scissorsBtn.addEventListener("click", function () {
 // For the last portion of the workshop, you will focus on building
 // out the winner message and reset button functionality.
 
-// Start by creating a variable called winnerMsgElement that will 
+// Start by creating a variable called winnerMsgElement that will
 // store the element with the id of winner-msg.
 
-// Then, create a variable called optionsContainer that will store 
+// Then, create a variable called optionsContainer that will store
 // the element with the class of options-container.
 
-// Finally, create a variable called resetGameBtn that will store 
+// Finally, create a variable called resetGameBtn that will store
 // the element with the id of reset-game-btn.
 
+const winnerMsgElement = document.querySelector("#winner-msg");
+const optionsContainer = document.querySelector(".options-container");
+const resetGameBtn = document.querySelector("#reset-game-btn");
 
+// Step 12
+// If you try to play the game, you will see that you can play for
+// an infinite amount of rounds. But the rules state that the first
+// one to three points wins. You want to check if there's a winner,
+// and display a message.
+
+// In your showResults function, if the player has reached three
+// points, update the winnerMsgElement to "Player has won the
+// game!". If the computer has reached three points, update the
+// winnerMsgElement to "Computer has won the game!".
+
+// If there is a winner, show the resetGameBtn button by settings
+// it's display to block and hide the optionsContainer by setting
+// it's display to none.
+
+// Now, try to play the game and see if the winner message is
+// displayed when a player reaches three points.
