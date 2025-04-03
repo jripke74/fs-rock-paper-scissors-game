@@ -153,7 +153,52 @@ const roundResultsMsg = document.querySelector("#results-msg");
 // will be used to determine the scores.
 
 function showResults(userOption) {
-  roundResultsMsg.textContent = roundResultsMsg(userOption);
+  roundResultsMsg.textContent = getRoundResults(userOption);
   playerScoreSpanElement.textContent = playerScore;
   computerScoreSpanElement.textContent = computerScore;
 }
+
+// Step 9
+// Now it is time to test out your showResults function.
+
+// Start by creating a variable called rockBtn and assign it the
+// value of the button with the id of rock-btn.
+
+// Then, create a variable called paperBtn and assign it the value
+// of the button with the id of paper-btn.
+
+// Finally, create a variable called scissorsBtn and assign it the
+// value of the button with the id of scissors-btn.
+
+const rockBtn = document.querySelector("#rock-btn");
+const paperBtn = document.querySelector("#paper-btn");
+const scissorsBtn = document.querySelector("#scissors-btn");
+
+// Step 10
+// The next step is to attach event listeners to each of the buttons
+// you created in the previous step.
+
+// Start by creating an event listener for the rockBtn button. When
+// the rockBtn button is clicked, you should call the showResults
+// function with the argument "Rock".
+
+// Then, create an event listener for the paperBtn button. When the
+// paperBtn button is clicked, you should call the showResults
+// function with the argument "Paper".
+
+// Finally, create an event listener for the scissorsBtn button. When
+// the scissorsBtn button is clicked, you should call the showResults
+// function with the argument "Scissors".
+
+// Now, you should be able to click on any of the buttons and see
+// the results for each round.
+
+rockBtn.addEventListener("click", function () {
+  showResults("Rock");
+});
+paperBtn.addEventListener("click", function () {
+  showResults("Paper");
+});
+scissorsBtn.addEventListener("click", function () {
+  showResults("Scissors");
+});
