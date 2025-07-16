@@ -79,3 +79,23 @@ Inside your showResults function, the roundResultsMsg should be updated with the
 Then, the playerScoreSpanElement and computerScoreSpanElement should also be updated to show the updated scores of the player and computer.
 
 Remember, that the order matters here. You will need to first update the roundResultsMsg, then the playerScoreSpanElement, and finally the computerScoreSpanElement because the roundResultsMsg will be used to determine the scores.
+
+Step 9 Passed
+Now it is time to test out your showResults function.
+
+Start by creating a variable called rockBtn and assign it the value of the button with the id of rock-btn.
+
+Then, create a variable called paperBtn and assign it the value of the button with the id of paper-btn.
+
+Finally, create a variable called scissorsBtn and assign it the value of the button with the id of scissors-btn.
+
+Step 10
+The next step is to attach event listeners to each of the buttons you created in the previous step.
+
+Start by creating an event listener for the rockBtn button. When the rockBtn button is clicked, you should call the showResults function with the argument "Rock".
+
+Then, create an event listener for the paperBtn button. When the paperBtn button is clicked, you should call the showResults function with the argument "Paper".
+
+Finally, create an event listener for the scissorsBtn button. When the scissorsBtn button is clicked, you should call the showResults function with the argument "Scissors".
+
+Now, you should be able to click on any of the buttons and see the results for each round.

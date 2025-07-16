@@ -37,8 +37,8 @@ const roundResultsMsg = document.querySelector("#results-msg");
 
 function showResults(userOption) {
   roundResultsMsg.innerText = getRoundResults(userOption);
-  computerScoreSpanElement.innerText = computerScore;
   playerScoreSpanElement.innerText = playerScore;
+  computerScoreSpanElement.innerText = computerScore;
 
   if (playerScore === 3 || computerScore === 3) {
     winnerMsgElement.innerText = `${
