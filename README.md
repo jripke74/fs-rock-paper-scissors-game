@@ -39,3 +39,43 @@ Here are the criteria for the player to win a round:
 If the player chooses "Rock" and the computer chooses "Scissors"
 If the player chooses "Scissors" and the computer chooses "Paper"
 If the player chooses "Paper" and the computer chooses "Rock"
+
+Step 5
+The next step is to create the variables responsible for keeping track of the player and computer scores.
+
+Create a variable called playerScore and initialize it with the value 0.
+
+Then, create a variable called computerScore and initialize it with the value 0.
+
+You will need to use let to declare these variables because their values will change throughout the game.
+
+Step 6
+Now it's time to get the results of the round. Complete the getRoundResults function.
+
+If the player wins the round, update the playerScore by 1 and return the message "Player wins! [player's choice] beats [computer's choice]".
+
+If the computer and player choose the same option, return the message "It's a tie! Both chose [player's choice]".
+
+If the computer wins the round, update the computerScore by 1 and return the message "Computer wins! [computer's choice] beats [player's choice]".
+
+[computer's choice] should be replaced with computerResult while [player's choice] should be replaced with the userOption.
+
+Step 7
+The next portion of the workshop is to create the functionality that will show the results.
+
+Start by creating a variable called playerScoreSpanElement and assign it the value of the element with the id player-score.
+
+Then create a variable called computerScoreSpanElement and assign it the value of the element with the id computer-score.
+
+Finally, create a variable called roundResultsMsg and assign it the value of the element with the id results-msg.
+
+Step 8
+Now it is time to update the scores and the round results message.
+
+Create a showResults function with a parameter called userOption.
+
+Inside your showResults function, the roundResultsMsg should be updated with the result of the round.
+
+Then, the playerScoreSpanElement and computerScoreSpanElement should also be updated to show the updated scores of the player and computer.
+
+Remember, that the order matters here. You will need to first update the roundResultsMsg, then the playerScoreSpanElement, and finally the computerScoreSpanElement because the roundResultsMsg will be used to determine the scores.
