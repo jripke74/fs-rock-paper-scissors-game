@@ -99,3 +99,26 @@ Then, create an event listener for the paperBtn button. When the paperBtn button
 Finally, create an event listener for the scissorsBtn button. When the scissorsBtn button is clicked, you should call the showResults function with the argument "Scissors".
 
 Now, you should be able to click on any of the buttons and see the results for each round.
+
+Step 11
+For the last portion of the workshop, you will focus on building out the winner message and reset button functionality.
+
+Start by creating a variable called winnerMsgElement that will store the element with the id of winner-msg.
+
+Then, create a variable called optionsContainer that will store the element with the class of options-container.
+
+Finally, create a variable called resetGameBtn that will store the element with the id of reset-game-btn.
+
+Step 12
+If you try to play the game, you will see that you can play for an infinite amount of rounds. But the rules state that the first one to three points wins. You want to check if there's a winner, and display a message.
+
+In your showResults function, if the player has reached three points, update the winnerMsgElement to "Player has won the game!". If the computer has reached three points, update the winnerMsgElement to "Computer has won the game!".
+
+If there is a winner, show the resetGameBtn button by setting its display to block and hide the optionsContainer by setting its display to none.
+
+Now, try to play the game and see if the winner message is displayed when a player reaches three points.
+
+Step 13
+If the player or computer has won the game, there should be an option to reset the game and play again.
+
+Add an event listener to the resetGameBtn button. Your event listener should take in a "click" event and a reference to the resetGame function.
